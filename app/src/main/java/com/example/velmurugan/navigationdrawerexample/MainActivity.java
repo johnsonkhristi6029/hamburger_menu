@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setCheckedItem(R.id.nav_camera);
 
         FragmentManager fragmentManager = getSupportFragmentManager();
-        ProfileFragment fragment = new ProfileFragment();
+        SearchFragment fragment = new SearchFragment();
         fragmentManager.beginTransaction().replace(R.id.frameLayout, fragment).commit();
     }
 
@@ -79,9 +79,10 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
 
         if (id == R.id.nav_camera) {
-           fragment = new ProfileFragment();
-        } else if (id == R.id.nav_gallery) {
             fragment = new SearchFragment();
+
+        } else if (id == R.id.nav_gallery) {
+            fragment = new ProfileFragment();
         } else if (id == R.id.nav_slideshow) {
             fragment = new Payments();
         }

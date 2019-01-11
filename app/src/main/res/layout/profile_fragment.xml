@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:background="@android:color/white">
 <EditText
+    android:id="@+id/editfirstname"
     android:layout_margin="20dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -13,18 +14,21 @@
     android:hint="First Name" />
 
     <EditText
+        android:id="@+id/editlastname"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:hint="Last Name" />
     <EditText
+        android:id="@+id/editstudentid"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:hint="Student Id " />
     <EditText
+        android:id="@+id/edituni"
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,12 +36,13 @@
         android:hint="University name" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgprofile"
         android:layout_width="match_parent"
         android:layout_height="139dp"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
     <Button
+        android:id="@+id/btnupdate"
         android:textSize="20dp"
         android:layout_marginTop="5dp"
         android:layout_gravity="center"
